@@ -1,0 +1,98 @@
+.greetings {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .invitation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45%;
+        height: 320px;
+
+        h4 {
+            font-size: 15px;
+            color: #6440fb;
+        }
+
+        h1 {
+            font-size: 40px;
+            width: 40%;
+            color: #140342;
+        }
+
+        span {
+            color: #6440fb;
+        }
+
+        p {
+            width: 38%;
+            font-size: 15px;
+        }
+
+        .joinButton {
+            margin-right: 20px;
+            width: 160px;
+            border-radius: 25px;
+            padding: 15px;
+            border: none;
+            color: white;
+            background: linear-gradient(90deg, rgba(113,66,233,1) 35%, rgba(214,81,88,1) 100%);
+            transition: 0.8s;
+            cursor: pointer;
+        }
+
+        .joinButton:hover {
+            width: 200px;
+        }
+
+        .findButton {
+            width: 160px;
+            border-radius: 25px;
+            padding: 15px;
+            color: #140342;
+            border: 1px solid rgb(231, 227, 227);
+            background: none;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .findButton:hover {
+            width: 200px;
+        }
+    }
+
+    .contentVideo {
+        .video {
+            width: 100%;
+            border-radius: 61% 39% 29% 71% / 73% 11% 89% 27%;
+            transition: 0.7s;
+        }
+
+        .video:hover {
+            border-radius: 0;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .greetings {
+        flex-direction: column;
+        height: 700px;
+        justify-content: space-between;
+
+        .invitation {
+            align-items: center;
+            width: 161%;
+        }
+
+        .contentVideo {
+            .video {
+                width: 100%;
+                padding: 40px;
+            }
+        }
+    }
+}

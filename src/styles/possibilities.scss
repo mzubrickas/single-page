@@ -1,0 +1,227 @@
+.possibilities {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: #140342;
+
+    .instructions {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            max-width: 70%;
+
+            .special {
+                color: #6440fb;
+            }
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 20px;
+
+            .stepsIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 40px;
+                background: #e5f0fd ;
+
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    
+                }
+            }
+            .stepsText {
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                max-width: 50%;
+
+                
+                h4 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .information {
+
+        .bigCircle {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            
+            .female {
+                background-image: url("../assets/images/female.jpg") ;
+                width: 560px;
+                height: 554px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 260px;
+                background-position: 42% 2%;
+
+                .cardFemale {
+                    padding: 20px;
+                    display: flex;
+                    background: white;
+                    width: 280px;
+                    border-radius: 10px;
+                    box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                    -webkit-box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                    -moz-box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+
+                    .circleFe {
+                        height: 50px;
+                        width: 50px;
+                        background: #fce5e2 url("../assets/icons/suitcase.png");
+                        background-repeat: no-repeat;
+                        background-size: 35px;
+                        background-position: 53% 25%;
+                        border-radius: 40px;
+                        margin-right: 10px;
+                    }
+
+                    h4 {
+                        color: #EA6753;
+                    }
+                }
+            }
+
+            .male {
+                background-image: url("../assets/images/male.jpg") ;
+                width: 251px;
+                height: 257px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 260px;
+                background-position: 42% 18%;
+                margin-top: 390px;
+
+                .cardMale {
+                    padding: 20px;
+                    margin-top: 20px;
+                    margin-left: 180px;
+                    display: flex;
+                    align-items: center;
+                    background: white;
+                    width: 280px;
+                    border-radius: 10px;
+                    box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                    -webkit-box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                    -moz-box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+
+                    .circleMe {
+                        height: 70px;
+                        width: 70px;
+                        background: url("../assets/images/profile.jpg");
+                        background-size: cover;
+                        background-position: 32% 50%;
+                        background-repeat: no-repeat;
+                        border-radius: 40px;
+                        margin-right: 10px;
+                    }
+
+                    .star {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                
+            
+            }
+
+            .cardOutside {
+                width: 280px;
+                
+                .circle {
+                    background: #6440fb url("../assets/icons/ribbon.png");;
+                    background-repeat: no-repeat;
+                    background-size: 35px;
+                    background-position: 47% 51%;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 30px;
+                    scale: 1;
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    background: white;
+                    border-radius: 10px;
+                    padding: 20px;
+                    margin-left: 20px;
+                    margin-top: -20px;
+                    box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                    -webkit-box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                    -moz-box-shadow: -3px 11px 57px -4px rgba(40,38,100,0.20);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .possibilities {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1800px;
+
+        .instructions {
+            scale: 0.7;
+        }
+
+
+        .information {
+            scale: 0.9;
+
+            .bigCircle {
+                flex-direction: column;
+
+                .female {
+                    width: 297px;
+                    height: 299px;
+
+                    .cardFemale { 
+                        scale: 0.5;
+                    }
+                }
+
+                .male {
+                    width: 195px;
+                    height: 190px;
+                    margin-top: 286px;
+
+                    .cardMale {
+                        scale: 0.5;
+                        margin-top: -174px;
+                        margin-left: -156px;
+                    }
+                }
+
+                .cardOutside {
+                    scale: 0.5;
+                }
+            }
+
+        }
+    }
+}
